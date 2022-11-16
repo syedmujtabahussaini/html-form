@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      form > fieldset > div {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label>Sulation</label>
+        <div>
+          <select>
+            <option value="">--None--</option>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+            <option value="miss">Miss</option>
+          </select>
+        </div>
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" name="lname" />
+        </div>
+        <div>
+          <label>Gender </label>
+          <label>
+            <input type="radio" name="gender" value="male" /> Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" />Female
+          </label>
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" />
+        </div>
+        <div>
+          <label>Date of birth</label>
+          <input type="date" name="dob" />
+        </div>
+        <div>
+          <label>Address</label><br />
+          <textarea name="address" cols="30" rows="5"></textarea>
+        </div>
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
